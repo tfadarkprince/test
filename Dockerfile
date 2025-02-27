@@ -1,5 +1,6 @@
-FROM quay.io/lyfe00011/md:beta
-RUN git clone https://github.com/lyfe00011/whatsapp-bot-md.git /root/LyFE/
-WORKDIR /root/LyFE/
+FROM node:lts-buster
+
+RUN git clone https://github.com/tfadarkprince/XLICON-V2.git /root/XLICON-V2/
+WORKDIR /root/XLICON-V2/
 RUN yarn install
 CMD ["npm", "start"]
